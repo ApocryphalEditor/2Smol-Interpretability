@@ -75,7 +75,7 @@ The repository is organized around the following functionalities:
 ## Previous Work
 An earlier version of SRM was explored in [this repo of SRM 6.0](https://github.com/ApocryphalEditor/SRM-mapping-framework).
 
-Previous research into semantic drift using the v9 Neuron code [in this repo](https://github.com/ApocryphalEditor/.gpt2-semantic-drift-v9-v13)
+Previous research into semantic drift using the v9 Neuron code [in this repo](https://github.com/ApocryphalEditor/gpt2-semantic-drift-v9-v13)
 
 Previous research into 373:11 using earlier Neuron intervention code [in this repo](https://github.com/ApocryphalEditor/gpt2-intervention-373.11).
 
