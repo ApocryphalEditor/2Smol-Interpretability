@@ -1,5 +1,7 @@
 # 2Smol Interpretability Suite: SRM, BCR, and Beyond
 
+This repository forms a living collection of tools, experiments, and frameworks designed for machine learning interpretability. It includes:
+
 *   **Semantic Resonance Mapping (SRM):** A method for projecting and measuring activation structures within latent space.
 *   **Baseline Collapse Recovery (BCR):** A specific study focusing on semantic collapse during generation and the potential for intervention-driven recovery.
 *   **Interactive Chat Interfaces:** GUI tools for real-time exploration of neuron interventions.
