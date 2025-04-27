@@ -40,7 +40,7 @@ BCR investigates specific failure modes and intervention potentials:
 
 The full workflow — from running intervention sweeps using `capture_intervened_activations.py` to detecting recovery events with `analyze_textv2.py` — is detailed in:
 
-➡️ **[`BCR Reproduction Guidelines.pdf`](./BCR%20Reproduction%20Guidelines.pdf)** ⬅️
+➡️ **[`BCR Paper and Reproduction Guidelines`](https://github.com/ApocryphalEditor/2Smol-Interpretability/tree/main/Documentation/BCR)** ⬅️
 
 ---
 
