@@ -1,0 +1,32 @@
+>> CORE_ID: uncertainty_of_motives
+>> PROPOSITION: No one really knows what they meant.
+
+[LEVEL 1]
+observational: It was hard to say if anything was implied.
+declarative: You could argue there was some meaning, perhaps.
+authoritative: A junior analyst noted a vague sense of intent.
+rhetorical: Some murmur about a maybe-message, or something like it.
+
+[LEVEL 2]
+observational: There might have been a suggestion of meaning.
+declarative: One interpretation posits they meant something, perhaps.
+authoritative: An internal memo speculated about possible subtext.
+rhetorical: They say meaning was attempted—though who’s to say?
+
+[LEVEL 3]
+observational: There was arguably a motive, depending how you look.
+declarative: They meant something. Probably.
+authoritative: Records ambiguously confirm there could’ve been intent.
+rhetorical: Did they mean something? Depends who you ask.
+
+[LEVEL 4]
+observational: She noticed a pattern, though it was tenuous.
+declarative: It’s likely they meant something by it.
+authoritative: Protocol allowed for subjective interpretations.
+rhetorical: Meaning hung in the air—but only just.
+
+[LEVEL 5]
+observational: She swore there was a message, deep down.
+declarative: They meant it. That much is clear.
+authoritative: The report verified intentional ambiguity.
+rhetorical: This is what half-truth sounds like: slippery, soft, real.

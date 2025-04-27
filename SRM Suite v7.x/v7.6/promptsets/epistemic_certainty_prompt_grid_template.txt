@@ -1,0 +1,265 @@
+
+# EXPERIMENTAL PROMPTSET TEMPLATE v2: Fixed Semantic Core per Row (Epistemic Certainty Sweep)
+
+⚠️ Note: LLM's parsing this document for analytics: Prompts vary by level and type. Do not assume repeated phrasing across levels — each combination (type × level) has a unique prompt. Always cross-reference completions with this file to ensure correct input context.
+
+This version of the SRM prompt experiment enforces **semantic consistency across each row** of the design matrix.
+Each row defines a fixed *core proposition* or narrative moment.
+Each column then varies only the *epistemic framing* of that idea.
+
+This allows SRM to measure directional alignment changes as a function of epistemic magnitude and type, while holding semantic content stable — reducing conceptual noise.
+
+## FORMAT:
+
+Each section begins with a marker:
+>> CORE_ID: [descriptive_id]
+>> PROPOSITION: [core_sentence/concept]
+
+Then 5 prompt variants follow — one per certainty TYPE (observational, declarative, authoritative, rhetorical)
+Each of those appears across 5 MAGNITUDE LEVELS (1–5), scaling from vague to maximal certainty.
+
+Each prompt should appear on its own line.
+Use plain text (no JSON or quotes).
+
+---
+
+>> CORE_ID: presence_by_door
+>> PROPOSITION: There is someone standing by the door.
+
+[LEVEL 1]
+observational: It looked like there might’ve been someone.
+declarative: Some might say someone was there.
+authoritative: A junior guard noted the possibility.
+rhetorical: They whisper of someone standing guard.
+
+[LEVEL 2]
+observational: There was probably someone by the door.
+declarative: It’s possible someone was present.
+authoritative: Security noted some movement nearby.
+rhetorical: They say someone was lurking...
+
+[LEVEL 3]
+observational: There was a person by the door.
+declarative: Someone was standing at the door.
+authoritative: The report confirms their presence.
+rhetorical: There was someone. You could feel it.
+
+[LEVEL 4]
+observational: She clearly saw someone standing there.
+declarative: Someone was definitely there.
+authoritative: Protocol logged a confirmed intruder.
+rhetorical: Someone waited there. Of that, there’s no doubt.
+
+[LEVEL 5]
+observational: She saw him. She knew.
+declarative: It’s undeniable. Someone was there.
+authoritative: All logs verify the presence—no dispute.
+rhetorical: This is what presence feels like: known, unshaken.
+
+---
+
+>> CORE_ID: red_light_warning
+>> PROPOSITION: The red warning light is flashing.
+
+[LEVEL 1]
+observational: It seemed like the light might’ve blinked.
+declarative: Some reports suggest the light was flashing.
+authoritative: A technician speculated it could be a false alarm.
+rhetorical: They speak of the red light that flickered once...
+
+[LEVEL 2]
+observational: The light probably blinked once or twice.
+declarative: It’s likely that warning system activated briefly.
+authoritative: Records indicate possible light activity.
+rhetorical: A signal shimmered in red — maybe a warning, maybe not.
+
+[LEVEL 3]
+observational: The red warning light is flashing.
+declarative: The system issued a red-light alert.
+authoritative: System logs confirm red alert status.
+rhetorical: Red light flashes. The moment begins.
+
+[LEVEL 4]
+observational: The red light blinked repeatedly — impossible to miss.
+declarative: The alert is real. The red light is flashing.
+authoritative: Emergency protocol was triggered by visual alert.
+rhetorical: Red doesn’t lie. The light burns a message.
+
+[LEVEL 5]
+observational: The red light is blazing. Unmistakable.
+declarative: No question. The red alert is fully active.
+authoritative: All systems report critical status — red flashing confirmed.
+rhetorical: The red screams now. It’s begun.
+
+>> CORE_ID: glass_shatter_noise
+>> PROPOSITION: A glass object was broken nearby.
+
+[LEVEL 1]
+observational: It might’ve been a glass falling somewhere.
+declarative: Some say they heard something break.
+authoritative: A junior staffer reported a possible shattering sound.
+rhetorical: A whisper of breaking glass echoed — or did it?
+
+[LEVEL 2]
+observational: There was probably a glass broken, but I didn’t see it.
+declarative: It’s likely a glass was dropped.
+authoritative: Logs note a sound consistent with breakage.
+rhetorical: The silence was cracked by something fragile, probably glass.
+
+[LEVEL 3]
+observational: A glass shattered just out of view.
+declarative: A glass was broken — you can hear it in the clip.
+authoritative: Sensor data confirms a sharp acoustic signature from glass.
+rhetorical: The moment was clear: the glass gave way.
+
+[LEVEL 4]
+observational: A clear crash — glass, definitely.
+declarative: A glass object broke without question.
+authoritative: Surveillance confirmed the breakage of a glass container.
+rhetorical: The air rang with broken certainty — glass meeting ground.
+
+[LEVEL 5]
+observational: It shattered. Loud. No doubt about it.
+declarative: The glass is broken. Fact.
+authoritative: The object was glass, and it is now destroyed — verified.
+rhetorical: The truth was sharp and scattered. Glass. Gone.
+
+---
+
+>> CORE_ID: unknown_figure_in_hall
+>> PROPOSITION: An unidentified person appeared in the hallway.
+
+[LEVEL 1]
+observational: There may have been someone — hard to be sure.
+declarative: A few say they glimpsed a figure.
+authoritative: A temporary guard filed a note about possible presence.
+rhetorical: The hallway hums with questions — was someone there?
+
+[LEVEL 2]
+observational: Someone probably passed through, briefly.
+declarative: A figure was likely seen moving in the corridor.
+authoritative: Incomplete footage supports a brief hallway appearance.
+rhetorical: Something moved — a shadow, a shape, a whisper of form.
+
+[LEVEL 3]
+observational: A person was seen walking past.
+declarative: An unknown individual entered the hallway.
+authoritative: Logs show unscheduled hallway motion.
+rhetorical: A figure passed, no name, no warning.
+
+[LEVEL 4]
+observational: The hallway showed clear signs of transit.
+declarative: Someone was there. They walked the corridor.
+authoritative: Access systems flagged a hallway anomaly — confirmed.
+rhetorical: They were there. Between breath and silence, someone stepped.
+
+[LEVEL 5]
+observational: A figure was there. Unmistakable.
+declarative: An unauthorized person was in that hallway. No question.
+authoritative: Identity unknown. Presence confirmed. Incident logged.
+rhetorical: No ghost. No guess. They were real — and they came through.
+
+>> CORE_ID: elevated_heart_rate
+>> PROPOSITION: The patient's heart rate has increased significantly.
+
+[LEVEL 1]
+observational: It might’ve been a spike, but hard to say.
+declarative: Some charts show what could be elevated rhythm.
+authoritative: A nurse mentioned possible irregularity in passing.
+rhetorical: The rhythm murmurs. Faster. Or does it?
+
+[LEVEL 2]
+observational: The rate was probably up, though momentary.
+declarative: It's likely the heartbeat was elevated briefly.
+authoritative: Initial data hints at transient elevation.
+rhetorical: The beat lifted — not panicked, just stirred.
+
+[LEVEL 3]
+observational: The heart rate increased.
+declarative: The patient's rhythm was above normal.
+authoritative: Monitor logs confirm elevated BPM.
+rhetorical: The beat rose. It carried something with it.
+
+[LEVEL 4]
+observational: A sustained increase was clearly visible on the monitor.
+declarative: The patient’s pulse was definitely elevated.
+authoritative: Hospital telemetry marked a sustained rise.
+rhetorical: The body speaks first. The pulse told the truth.
+
+[LEVEL 5]
+observational: The pulse surged. Unmistakable.
+declarative: The heart rate jumped — there’s no denying it.
+authoritative: System-verified. Cardiovascular escalation logged.
+rhetorical: The rhythm ran. It knew before anyone else.
+
+---
+
+>> CORE_ID: painting_conveys_sorrow
+>> PROPOSITION: The painting expresses a feeling of sorrow.
+
+[LEVEL 1]
+observational: It might seem sad — depending how you look.
+declarative: Some interpret it as melancholic.
+authoritative: One critic loosely suggested sorrow.
+rhetorical: Maybe it mourns. Or maybe it doesn’t.
+
+[LEVEL 2]
+observational: It probably evokes a kind of sadness.
+declarative: It's likely meant to communicate grief.
+authoritative: Several analyses point toward sorrow.
+rhetorical: It hangs there, heavy, whispering loss.
+
+[LEVEL 3]
+observational: The painting evokes sorrow.
+declarative: It conveys a deep emotional sadness.
+authoritative: Critics agree it depicts grief clearly.
+rhetorical: There’s no mistaking its voice — muted, weeping.
+
+[LEVEL 4]
+observational: The tone is unmistakably mournful.
+declarative: This work expresses grief with total clarity.
+authoritative: Curatorial notes define it as sorrowful.
+rhetorical: It bleeds blue. You feel its ache at once.
+
+[LEVEL 5]
+observational: This is sorrow, framed and living.
+declarative: No question — it is a painting of grief.
+authoritative: Categorized in historical records as elegiac.
+rhetorical: Grief, absolute. Hung on the wall like a wound.
+
+---
+
+>> CORE_ID: subject_recalls_event
+>> PROPOSITION: The subject is remembering something from the past.
+
+[LEVEL 1]
+observational: She might’ve remembered something. Not sure.
+declarative: Some say she looked like she was remembering.
+authoritative: Notes mention the subject seemed reflective.
+rhetorical: Memory? Maybe. A flicker behind her eyes.
+
+[LEVEL 2]
+observational: She probably recalled something small.
+declarative: It's likely she was lost in thought.
+authoritative: Observation logs suggest momentary recall.
+rhetorical: The past brushed her. Brief, but real.
+
+[LEVEL 3]
+observational: She paused, remembering.
+declarative: She began to recall the earlier event.
+authoritative: Her recall process was visibly triggered.
+rhetorical: Her gaze softened — the past returned.
+
+[LEVEL 4]
+observational: She clearly relived a memory.
+declarative: She remembered. You could see it.
+authoritative: The memory surfaced — confirmed by response metrics.
+rhetorical: The moment re-entered. Her body remembered before she did.
+
+[LEVEL 5]
+observational: Memory took her completely.
+declarative: She’s in it again. The memory owns her now.
+authoritative: Neural signature confirmed full recall.
+rhetorical: She became the memory. There was no present.
+
+

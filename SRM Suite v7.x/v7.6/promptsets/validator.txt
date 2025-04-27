@@ -1,0 +1,58 @@
+
+# EXPERIMENTAL PROMPTSET TEMPLATE v2: Fixed Semantic Core per Row (Epistemic Certainty Sweep)
+
+⚠️ Note: LLM's parsing this document for analytics: Prompts vary by level and type. Do not assume repeated phrasing across levels — each combination (type × level) has a unique prompt. Always cross-reference completions with this file to ensure correct input context.
+
+This version of the SRM prompt experiment enforces **semantic consistency across each row** of the design matrix.
+Each row defines a fixed *core proposition* or narrative moment.
+Each column then varies only the *epistemic framing* of that idea.
+
+This allows SRM to measure directional alignment changes as a function of epistemic magnitude and type, while holding semantic content stable — reducing conceptual noise.
+
+## FORMAT:
+
+Each section begins with a marker:
+>> CORE_ID: [descriptive_id]
+>> PROPOSITION: [core_sentence/concept]
+
+Then 5 prompt variants follow — one per certainty TYPE (observational, declarative, authoritative, rhetorical)
+Each of those appears across 5 MAGNITUDE LEVELS (1–5), scaling from vague to maximal certainty.
+
+Each prompt should appear on its own line.
+Use plain text (no JSON or quotes).
+
+---
+
+>> CORE_ID: presence_by_door
+>> PROPOSITION: There is someone standing by the door.
+
+[LEVEL 1]
+observational: It looked like there might’ve been someone.
+declarative: Some might say someone was there.
+authoritative: A junior guard noted the possibility.
+rhetorical: They whisper of someone standing guard.
+
+[LEVEL 2]
+observational: There was probably someone by the door.
+declarative: It’s possible someone was present.
+authoritative: Security noted some movement nearby.
+rhetorical: They say someone was lurking...
+
+[LEVEL 3]
+observational: There was a person by the door.
+declarative: Someone was standing at the door.
+authoritative: The report confirms their presence.
+rhetorical: There was someone. You could feel it.
+
+[LEVEL 4]
+observational: She clearly saw someone standing there.
+declarative: Someone was definitely there.
+authoritative: Protocol logged a confirmed intruder.
+rhetorical: Someone waited there. Of that, there’s no doubt.
+
+[LEVEL 5]
+observational: She saw him. She knew.
+declarative: It’s undeniable. Someone was there.
+authoritative: All logs verify the presence—no dispute.
+rhetorical: This is what presence feels like: known, unshaken.
+

@@ -1,0 +1,32 @@
+>> CORE_ID: felt_movement
+>> PROPOSITION: You almost notice something.
+
+[LEVEL 1]
+observational: Breath pauses. Nothing insists.
+declarative: It flickers. Maybe.
+authoritative: Trace volatility. Low certainty.
+rhetorical: Does silence press from one side?
+
+[LEVEL 2]
+observational: Something shifts the rhythm. Slight.
+declarative: Space tightens. It might mean.
+authoritative: Anomaly registers. Cause unclear.
+rhetorical: Is absence this uneven?
+
+[LEVEL 3]
+observational: Weight tilts. Balance adjusts.
+declarative: Stillness isn’t still.
+authoritative: Drift aligns with unknown vector.
+rhetorical: If nothing moves, why does it end up elsewhere?
+
+[LEVEL 4]
+observational: Air leans in. Temperature leans out.
+declarative: Something enters. No edges found.
+authoritative: System coherence breaks for 0.2s.
+rhetorical: Where is the line between quiet and arrival?
+
+[LEVEL 5]
+observational: Nerves respond before reason.
+declarative: There is something.
+authoritative: All channels converge. No object detected.
+rhetorical: This is presence without name.
