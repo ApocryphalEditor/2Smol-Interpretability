@@ -19,17 +19,15 @@ SRM, originally inspired by the Spotlight Resonance Method developed by George B
 2.  **Projection:** Projecting other activation vectors (captured during model processing) onto this 2D basis plane.
 3.  **Measurement:** Analyzing the angle (directional meaning) and magnitude (*resonance* or alignment strength) of these projections relative to the basis vectors, often by sweeping a probe vector through the plane.
 
-SRM can reveal activation geometries, directional drifts (like the **Grey Vector**), and hidden semantic tendencies relative to the chosen basis.
+SRM can reveal activation geometries, directional drifts (like the [**Grey Vector**](https://github.com/ApocryphalEditor/2Smol-Interpretability/blob/main/Documentation/SRM%20Suite/A%20Multi-Basis%20Projection%20Framework%20for%20Latent%20Alignment%20Analysis%20in%20Language%20Models.pdf)), and hidden semantic tendencies relative to the chosen basis.
 
-SRM leverages two key experimental tools developed in this project:
+SRM leverages two key experimental concepts developed in this project:
 
-*   **The Raccoon Schemas:** A set of six structured experimental designs (`SRM Schemas 01-06.pdf`) that systematically test how meaning shifts depending on neuron focus, prompt framing, clamp intensity, and basis choice. These schemas range from probing simple neuron influence (Schema 01) to sophisticated basis-invariant meaning persistence tests (Schema 06, the **"Bat Country Protocol"**). They frame SRM not just as a measurement, but as an *interpretive act*.
+*   **The Raccoon Schemas:** A set of six structured experimental designs (`SRM Schemas 01-06.pdf`) that systematically test how meaning shifts depending on neuron focus, prompt framing, clamp intensity, and basis choice. These schemas range from probing simple neuron influence (Schema 01) to sophisticated basis-invariant meaning persistence tests (Schema 06, the **"Bat Country Protocol"**). They frame SRM not just as a measurement, but as an *interpretive act*. See: [Racoon Schemas v1](https://github.com/ApocryphalEditor/2Smol-Interpretability/blob/main/Documentation/SRM%20Suite/Racoon%20Schema_full_images.pdf)
 
-*   **The Epistemic Matrix:** A structured, reusable prompt set (`epistemic_certainty_prompt_grid_template.txt`) that varies core semantic ideas along axes of rhetorical type (e.g., declarative, rhetorical, observational) and certainty level (1–5). It allows controlled, factorial testing of how the model’s internal activations respond not only to *what* is said, but *how* it is said. The Matrix ensures experiments are *epistemically grounded* and enables programmatic generation of prompt-derived basis vectors.
+*   **The Epistemic Matrix:** A structured, reusable prompt set (`epistemic_certainty_prompt_grid_template.txt`) that varies core semantic ideas along axes of rhetorical type (e.g., declarative, rhetorical, observational) and certainty level (1–5). It allows controlled, factorial testing of how the model’s internal activations respond not only to *what* is said, but *how* it is said. The Matrix ensures experiments are *epistemically grounded* and enables programmatic generation of prompt-derived basis vectors. See: [Discussion of "Matrix" and "Grid" concepts](https://github.com/ApocryphalEditor/2Smol-Interpretability/blob/main/Documentation/SRM%20Suite/Epistemic%20Matrix.pdf)
 
-**Important Note on Flexibility:** While the provided Epistemic Matrix uses declarative/rhetorical/observational axes, *any* semantic contrast could define a basis (e.g., serious vs. comedic, mathematical vs. spiritual). The power lies in realizing how flexible interpretive axes can be when treated as dynamic projections, not fixed neuron indices.
-
-*(Note: Semantic collapse and recovery phenomena are primarily studied via direct intervention analysis in the BCR workflow, not typically via SRM projections themselves.)*
+**Important Note on Flexibility:** While the provided Epistemic Matrix uses declarative/rhetorical/observational axes, *any* semantic contrast could define a basis (e.g., serious vs. comedic, mathematical vs. spiritual). The power lies in realizing how flexible interpretive axes can be when treated as dynamic projections, not only fixed neuron indices.
 
 ### Baseline Collapse Recovery (BCR)
 
