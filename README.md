@@ -31,10 +31,6 @@ SRM leverages two key experimental concepts developed in this project:
 
 **Important Note on Flexibility:** While the provided Epistemic Matrix uses declarative/rhetorical/observational axes, *any* semantic contrast could define a basis (e.g., serious vs. comedic, mathematical vs. spiritual). The power lies in realizing how flexible interpretive axes can be when treated as dynamic projections, not only fixed neuron indices.
 
-An earlier version of SRM was explored in [this repo of SRM 6.0](https://github.com/ApocryphalEditor/SRM-mapping-framework).
-Previous research into semantic drift using the v9 Neuron code [in this repo](https://github.com/ApocryphalEditor/.gpt2-semantic-drift-v9-v13)
-Previous research into 373:11 [in this repo](https://github.com/ApocryphalEditor/gpt2-intervention-373.11).
-
 ### Baseline Collapse Recovery (BCR)
 
 BCR investigates specific failure modes and intervention potentials:
@@ -73,6 +69,15 @@ The repository is organized around the following functionalities:
 *   `GPT2All.py` / `GPT2Last.py`: GUI tools for real-time neuron intervention exploration.
 *   `visualize_srm_multi_basis_v721_global.py`: An older script for overlaying multiple SRM results.
 *   `utils.py`: Shared helper functions for file I/O, data processing, calculations, etc.
+
+---
+
+## Previous Work
+An earlier version of SRM was explored in [this repo of SRM 6.0](https://github.com/ApocryphalEditor/SRM-mapping-framework).
+
+Previous research into semantic drift using the v9 Neuron code [in this repo](https://github.com/ApocryphalEditor/.gpt2-semantic-drift-v9-v13)
+
+Previous research into 373:11 using earlier Neuron intervention code [in this repo](https://github.com/ApocryphalEditor/gpt2-intervention-373.11).
 
 ---
 
